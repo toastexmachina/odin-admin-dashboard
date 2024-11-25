@@ -40,6 +40,11 @@
   https://www.joshwcomeau.com/css/custom-css-reset/
 */
 
+img {
+  width:1em;
+  height:1em;
+}
+
 div.container {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -78,5 +83,19 @@ div.announcements-block {
 
 div.trending-block {
     grid-area: trending;
+}
+
+.sidebar-heading {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-logo {
+  width: 1em;
+  height: 1em;
+}
+
+.sidebar-text{
+  font-size: 1em;
 }
 
