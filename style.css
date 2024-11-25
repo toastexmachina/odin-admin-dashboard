@@ -59,5 +59,24 @@ div.header {
 
 div.main-content{
     grid-area: main-content;
+    
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "projects announcements"
+    "projects trending";
+}
+
+div.projects-block {
+    grid-area: projects;
+}
+
+div.announcements-block {
+    grid-area: announcements;
+}
+
+div.trending-block {
+    grid-area: trending;
 }
 
