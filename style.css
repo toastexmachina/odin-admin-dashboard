@@ -40,3 +40,24 @@
   https://www.joshwcomeau.com/css/custom-css-reset/
 */
 
+div.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+    grid-template-areas: 
+    "sidebar header"
+    "sidebar main-content";
+}
+
+div.sidebar {
+    grid-area: sidebar;
+}
+
+div.header {
+    grid-area: header;
+}
+
+div.main-content{
+    grid-area: main-content;
+}
+
