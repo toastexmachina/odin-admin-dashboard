@@ -90,7 +90,12 @@ ul.secondary-nav {
 
 div.header {
     grid-area: header;
+
+    grid-template-columns: 1fr auto 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
 }
+
+
 
 div.main-content{
     grid-area: main-content;
