@@ -45,6 +45,8 @@
         </div>
         <div class="main-content">
             <h1 class="section-title main-content-title">Your Projects</h1>
+            <!-- NOTE: Projects should be in flexbox, not Grid, so that they stack in mobile form  -->
+             <!-- NOTE: Projects block height is locked to the height of the adjacent blocks, which prevents the height from auto-locking to the content size -->
             <div class="projects-block">
                 <div class="project-item">
                     <h2 class="project-title">Invade Hydra Base</h2>
@@ -120,28 +122,35 @@
             </div>
             <div class="trending-block">
                 <h1>Trending</h1>
-                <ul>
-                    <li class="social-handle">
+                <div class="social-handle">
+                    <div class="social-pair">
                         <img src="./assets/profile-pics/noun-iron-man-4240472.png" alt="iron man helmet profile picture">
                         <h2>@theironman</h2>
-                        <p>World Peace Builder</p>
-                    </li>
-                    <li class="social-handle">
+                    </div>
+                    <p>World Peace Builder</p>
+                </div>
+                <div class="social-handle">
+                    <div class="social-pair">
                         <img src="./assets/profile-pics/noun-shield-3932752.png" alt="captain america shield profile picture">
                         <h2>@srogers</h2>
-                        <p>Trying something new</p>
-                    </li>
-                    <li class="social-handle">
+                    </div>
+                    <p>Trying something new</p>
+                </div>
+                <div class="social-handle">
+                    <div class="social-pair">
                         <img src="./assets/profile-pics/noun-spider-man-1634911.png" alt="spider-man profile picture">
                         <h2>@spiderman1439</h2>
-                        <p>Hello world! Excited to be here! I'm a new "hero" from NYC...</p>
-                    </li>
-                    <li class="social-handle">
+                    </div>
+                    <p>Hello world! Excited to be here! I'm a new "hero" from NYC...</p>
+                </div>
+                <div class="social-handle">
+                    <div class="social-pair">
                         <img src="./assets/profile-pics/noun-thor-2595716.png" alt="mjolnir profile picture">
                         <h2>@iamthor</h2>
-                        <p>I am Thor.</p>
-                    </li>
-                </ul>
+                    </div>
+                    <p>I am Thor.</p>
+                </div>
+            </div>        
         </div>
     </div>
 
