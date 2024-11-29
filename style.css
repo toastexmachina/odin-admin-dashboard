@@ -136,30 +136,37 @@ div.bottom-row > button.share-button {
 }
 
 
-
-
-
-
-
+/* Main Content Grid */
 div.main-content{
     grid-area: main-content;
     
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
     grid-template-areas:
+    "title title"
     "projects announcements"
     "projects trending";
 }
 
+h1.main-content-title {
+  grid-area: title;
+}
 div.projects-block {
     grid-area: projects;
 }
-
 div.announcements-block {
     grid-area: announcements;
 }
-
 div.trending-block {
     grid-area: trending;
+}
+
+/* Projects Grid */
+div.main-content > div.projects-block {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-gap: 1rem;
 }
