@@ -90,10 +90,54 @@ ul.secondary-nav {
 
 div.header {
     grid-area: header;
-
-    grid-template-columns: 1fr auto 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
 }
+
+/* Header Top Row Grid */
+div.top-row {
+  display: grid;
+  grid-template-columns: auto auto 1fr auto auto auto;
+  grid-template-rows: auto;
+}
+div.top-row > label.search-icon {
+  grid-column: 1;
+}
+div.top-row > #search-bar {
+  grid-column: 2;
+}
+div.top-row > .alert-icon {
+  grid-column: 4;
+}
+div.top-row > .main-profile-pic {
+  grid-column: 5;
+}
+div.top-row > .main-name{
+  grid-column: 6;
+}
+
+/* Header Bottom Row Grid */
+div.bottom-row {
+  display: grid;
+  grid-template-columns: auto auto 1fr auto auto auto;
+}
+div.bottom-row > img.profile-pic {
+  grid-column: 1;
+}
+div.bottom-row > .main-message {
+  grid-column: 2;
+}
+div.bottom-row > button.new-button {
+  grid-column: 4;
+}
+div.bottom-row > button.upload-button {
+  grid-column: 5;
+}
+div.bottom-row > button.share-button {
+  grid-column: 6;
+}
+
+
+
+
 
 
 
