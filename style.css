@@ -172,7 +172,8 @@ div.main-content > div.projects-block {
 
 div.projects-block > div.project-item {
   position: relative;
-  height: 200px;
+  min-height: 200px;
+  height: auto;
 }
 
 div.project-item > div.project-icon-group {
